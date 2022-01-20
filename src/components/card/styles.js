@@ -46,7 +46,7 @@ export const Id = styled.p`
     color: #8A8A8A;
     position: absolute;
     bottom: -0.5rem;
-    left: 0.3rem;
+    left: 1rem;
 `;
 
 export const Name = styled.p`
