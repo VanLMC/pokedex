@@ -33,7 +33,7 @@ export default function SearchBar() {
 
   return (
     <S.Search>
-      <S.SearchBarInput type="text" placeholder="Procure um pokémon" onChange={(e) => setSearchTerm(e.target.value)} />
+      <S.SearchBarInput type="text" placeholder="Procure um pokémon" onKeyDown={(e) => { if (e.key === 'Enter') { handleSearch(); } }} onChange={(e) => setSearchTerm(e.target.value)} />
       <S.SearchBarButton onClick={handleSearch}>
         <S.SearchIcon />
       </S.SearchBarButton>
