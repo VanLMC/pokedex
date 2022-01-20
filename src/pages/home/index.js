@@ -22,8 +22,8 @@ export default function Home() {
 
   const fetchPokemon = async () => {
     try {
-      const res = await api.get('/pokedex.json');
-      setPokemon(res.data.pokemon);
+      const { data } = await api.get('/pokedex.json');
+      setPokemon(data.pokemon);
     } catch (err) {
       alert(err);
     } finally {
