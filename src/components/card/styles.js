@@ -6,6 +6,10 @@ export const Container = styled.div`
     width: 22rem;
     align-items: center;
 
+    @media only screen and (max-width: 30rem){
+        width: auto;
+    }
+
     .picture-container {
         position: relative;
         margin: 0;
