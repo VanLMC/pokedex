@@ -4,29 +4,45 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 22rem;
-
     align-items: center;
-    img:hover {
+
+    .picture-container {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        transition: transform .2s; 
+        
+        .tile{
+            height: 1.2rem;
+            width: 12rem;
+            background-color: #fff;
+            position: absolute;
+            border-top-right-radius: 10px;
+            left: 0;
+            bottom: 0rem;
+            
+        }
+    }
+    .picture-container:hover {
         transform: scale(1.3);
-      }
+     }
 `;
 
 export const Picture = styled.img`
     width: 19rem;
     height: 19rem;
-    
     background-color: #F2F2F2;
     padding: 40px;
-    transition: transform .2s; 
-    
 `;
+
 export const Id = styled.p`
     font-size: 1.2rem;
-    font-weight: 600;
-    color: #8A8A8A;
-    margin-top: 5px;
-    margin-left: 30px;
+    font-weight: 600;       
     margin-right: auto;
+    color: #8A8A8A;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0.3rem;
 `;
 
 export const Name = styled.p`

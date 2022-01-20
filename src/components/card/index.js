@@ -9,8 +9,13 @@ import * as S from './styles';
 export default function Card({ data }) {
   return (
     <S.Container>
-      <S.Picture src={data.img} />
-      <S.Id>{`#${(`00${data.id}`).slice(-3)}`}</S.Id>
+
+      <div className="picture-container">
+        <S.Picture src={data.img} />
+        <div className="tile" />
+        <S.Id>{`#${(`00${data.id}`).slice(-3)}`}</S.Id>
+      </div>
+
       <S.Name>{data.name}</S.Name>
       <S.TypeContainer>
         {data.type.map((t, index) => (
